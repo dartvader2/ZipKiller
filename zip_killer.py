@@ -63,18 +63,18 @@ def main():
 
             try:
                 z_file.extractall(pwd=passwd)
-                print "\033[\n1;31m[+] Congrats!! Password Found : " \
-                    + passwd + "\n\033[0m"
+                print "\033[\n1;31m[+](Congrats!! Password Found: " \
+                    + passwd + "\n\033[0m")
                 if passwd != '':
                     quit()
             except Exception:
                 pass
-        print(""")
-\033[1;31m[+] Password Not Found in Given Wordlist 
+        print"""
+\033[1;31m[+](Password Not Found in Given Wordlist) 
 \033[0m"""
     else:
-        print("""\033[1;31m)
-Thank You !! 
+        print"""\033[1;31m
+(Thank You !!)
 \033[0m"""
         time.sleep(1)
         quit()

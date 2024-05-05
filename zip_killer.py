@@ -59,7 +59,7 @@ def main():
         message2 = "\033[\n1;36m[+] Checking For Correct Password ..."
         print(message2)
         for line in pwd_list.readlines():
-            passwd = line.strip('\n')python zip_killer.py
+            passwd = line.strip('\n')
 
     # Password Brute Forcing
 

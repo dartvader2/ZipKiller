@@ -54,28 +54,33 @@ def main():
         word_list = word_list.replace(' ', '')
         z_file = zipfile.ZipFile(file_path)
         pwd_list = open(word_list)
-        print("\033[\n1;32m[+] Brute Force Initiated ...")
-        print("\033[\n1;36m[+] Checking For Correct Password ...")
+        message1 = "\033[\n1;32m[+] Brute Force Initiated ..."
+        print(message1)
+        message2 = "\033[\n1;36m[+] Checking For Correct Password ..."
+        print(message2)
         for line in pwd_list.readlines():
-            passwd = line.strip('\n')
+            passwd = line.strip('\n')python zip_killer.py
 
     # Password Brute Forcing
 
             try:
                 z_file.extractall(pwd=passwd)
-                print "\033[\n1;31m[+](Congrats!! Password Found: " \
-                    + passwd + "\n\033[0m")
+                message3 = print "\033[\n1;31m[+] Congrats!! Password Found: " \
+                    + passwd + "\n\033[0m"
+                print(message3)
                 if passwd != '':
                     quit()
             except Exception:
                 pass
-        print"""
-\033[1;31m[+](Password Not Found in Given Wordlist) 
+        message4 = """
+\033[1;31m[+] Password Not Found in Given Wordlist
 \033[0m"""
+        print(message4)
     else:
-        print"""\033[1;31m
-(Thank You !!)
+        message5 = """\033[1;31m
+Thank You !!
 \033[0m"""
+        print(message5)
         time.sleep(1)
         quit()
 

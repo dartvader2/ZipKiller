@@ -63,7 +63,7 @@ def main():
 
             try:
                 z_file.extractall(pwd=passwd)
-                print("\033[\n1;31m[+] Congrats!! Password Found : " \)
+                print "\033[\n1;31m[+] Congrats!! Password Found : " \
                     + passwd + "\n\033[0m"
                 if passwd != '':
                     quit()

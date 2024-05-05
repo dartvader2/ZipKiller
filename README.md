@@ -1,4 +1,4 @@
-# Zip_File_Password_Cracker
+# ZipKiller Password Cracker
 ZipKiller is a python based tool for cracking zip file passwords using brute force method. 
 The tool contains a sample for 1000 password Wordlist. User can change the password dictionary accordingly. The default wordlist is set to Rockyou.txt
 
@@ -16,7 +16,7 @@ The tool contains a sample for 1000 password Wordlist. User can change the passw
 ZipKiller Requires Python 2.7 or higher version to run.
 
 ```sh
-$ git clone https://github.com/Encryptor-Sec/ZipKiller.git
+$ git clone https://github.com/dartvader2/ZipKiller.git
 $ cd ZipKiller
 ```
 
@@ -25,20 +25,20 @@ $ cd ZipKiller
 ```sh
 $ python zip_killer.py
 ```
-![Image description](https://github.com/shreenathXoX/Zip_File_Password_Cracker/blob/main/GITiMAGES/1.png)
+![Image description](https://github.com/dartvader2/ZipKiller/blob/main/gitimages/1.png)
 
-```sh
+```shKi
 1. Select the Option
 2. Enter Path of Zip File
 3. Enter Path of Wordlist OR Press Enter to go with default rockyou wordlist
 ```
-![Image description](https://github.com/shreenathXoX/Zip_File_Password_Cracker/blob/main/GITiMAGES/2.png)
+![Image description](https://github.com/dartvader2/ZipKiller/blob/main/gitimages/2.png)
 
 
 ```sh
 $ Press Enter to start Brute-Forcing ..
 ```
-![Image description] ( https://github.com/shreenathXoX/Zip_File_Password_Cracker/blob/main/GITiMAGES/3.png )
+![Image description](https://github.com/dartvader2/ZipKiller/blob/main/gitimages/3.png)
 
 
 

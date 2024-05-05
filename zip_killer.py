@@ -33,7 +33,7 @@ xyz = \
 [2] Exit Tool        
 \033[0m                                                                          
 '''
-print xyz
+print(xyz)
 
 
 # Main Function
@@ -54,8 +54,8 @@ def main():
         word_list = word_list.replace(' ', '')
         z_file = zipfile.ZipFile(file_path)
         pwd_list = open(word_list)
-        print "\033[\n1;32m[+] Brute Force Initiated ..."
-        print "\033[\n1;36m[+] Checking For Correct Password ..."
+        print("\033[\n1;32m[+] Brute Force Initiated ...")
+        print("\033[\n1;36m[+] Checking For Correct Password ...")
         for line in pwd_list.readlines():
             passwd = line.strip('\n')
 
@@ -63,17 +63,17 @@ def main():
 
             try:
                 z_file.extractall(pwd=passwd)
-                print "\033[\n1;31m[+] Congrats!! Password Found : " \
+                print("\033[\n1;31m[+] Congrats!! Password Found : " \)
                     + passwd + "\n\033[0m"
                 if passwd != '':
                     quit()
             except Exception:
                 pass
-        print """
+        print(""")
 \033[1;31m[+] Password Not Found in Given Wordlist 
 \033[0m"""
     else:
-        print """\033[1;31m
+        print("""\033[1;31m)
 Thank You !! 
 \033[0m"""
         time.sleep(1)
